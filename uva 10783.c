@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a, b, t, i, sum;
+    int a, b, t, i, sum, caseno=0;
     while(scanf("%d", &t) == 1){
             while(t--){
                     scanf("%d %d", &a, &b);
@@ -11,7 +11,7 @@ int main()
             if(i%2!=0)
                 sum+=i;
         }
-    printf("%d\n", sum);
+    printf("Case %d: %d\n", ++caseno, sum);
     }
     }
     return 0;
