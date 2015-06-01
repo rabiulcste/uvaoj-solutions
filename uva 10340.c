@@ -3,20 +3,23 @@
 
 int main()
 {
-    int x, y, i, j, count;
-    char a[100], b[100];
-    while(scanf("%s %s", a, b)!=EOF){
+    int x, y, i, j, d, count;
+    char a[100000], b[100000];
+    while(scanf("%s %s", a, b)==2){
         x = strlen(a);
         y = strlen(b);
         count = 0;
-        for(i=0; i<y; i++){
-            for(j=0; j<x; j++){
-                if(b[i]==a[j]){
+        d = 0;
+        for(i=0; i<x; i++){
+            for(j=d; j<y; j++){
+                if(a[i]==b[j]){
                     count++;
+                    d = j+1;
+                    break;
                 }
             }
         }
-        if(count>=y)
+        if(count==x)
             printf("Yes\n");
         else
             printf("No\n");
