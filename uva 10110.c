@@ -1,5 +1,7 @@
-#include <stdio.h>
-#include <math.h>
+#include <iostream>
+#include <cmath>
+#include <cstdio>
+using namespace std;
 
 int main()
 {
@@ -14,3 +16,4 @@ int main()
     }
     return 0;
 }
+
