@@ -18,7 +18,7 @@ typedef pair<double, double> pdd;
 int main()
 {
     int n;
-    char road, dir, u, v;
+    char road, dir, u, v; 
     int cost;
     while(cin>>n){
         if(n==0) break;
