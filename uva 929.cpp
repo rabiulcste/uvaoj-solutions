@@ -17,7 +17,6 @@ struct node {
         return cost>X.cost;
     }
 };
-
 int g[mx][mx], dist[mx][mx];
 bool visited[mx][mx];
 
