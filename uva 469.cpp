@@ -6,6 +6,7 @@ using namespace std;
 
 int fx[] = {-1, -1, -1, 0, 1, 1, 1, 0};
 int fy[] = {-1, 0, 1, 1, 1, 0, -1, -1};
+
 char mat[mx][mx];
 int color[mx][mx];
 int row, col, dr, dc;
