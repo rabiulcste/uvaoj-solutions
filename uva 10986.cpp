@@ -38,7 +38,6 @@ void dijkstra(int start) {
     d[start] = 0;
 
     // As long as queue is not empty, check each adjacent node of u
-
     while(!Q.empty()) {
         u = Q.top().second; // node
         c = Q.top().first; // node cost
