@@ -19,6 +19,5 @@ int main()
                         for(int e=d+1; e<k-1; e++)
                             for(int f=e+1; f<k; f++)
                                 printf("%d %d %d %d %d %d\n", in[a], in[b], in[c], in[d], in[e], in[f]);
-
     }
 }
