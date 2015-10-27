@@ -22,6 +22,7 @@ int main()
                         break;
                 }
             }
+            
             if(ans1==-1) printf("X");
             else printf("%d", ans1);
             if(ans2==-1) printf(" X\n");
