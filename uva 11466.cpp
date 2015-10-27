@@ -6,6 +6,7 @@ void primeFactors(ll n)
 {
     ll large = 0, cot = 0, res;
     int flag = 0;
+    
     // if number is a even number, then prll 2
     while(n%2 == 0)
     {
