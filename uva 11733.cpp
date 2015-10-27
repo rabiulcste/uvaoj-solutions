@@ -56,6 +56,7 @@ int main()
         }
 
         cost = 0;
+        
         // sort the edges
         sort(e.begin(), e.end());
 
