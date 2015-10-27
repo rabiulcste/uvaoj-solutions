@@ -21,6 +21,7 @@ void primeFactors(ll n)
     for(ll i = 3; i <= sqrt(n); i += 2)
     {
         flag = 0;
+        
         // while i divides n, prll i and divide n
         while(n%i == 0)
         {
