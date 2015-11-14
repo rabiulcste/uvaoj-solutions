@@ -1,0 +1,29 @@
+#include <bits//stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    char s[1000000+10];
+    long t, i, j, p, q, kase = 0;
+    while(scanf("%s", s) == 1){
+          if(strlen(s)==0) break;
+        printf("Case %ld:\n", ++kase);
+        scanf("%ld", &t);
+        while(t--){
+
+            int flag = 1;
+            scanf("%ld %ld", &p, &q);
+            i = min(p, q);
+            j = max(p, q);
+            for(; i<j; i++){
+                if(s[i] != s[i+1]){
+                    flag = 0;
+                    break;
+                }
+            }
+            if(flag == 1) printf("Yes\n");
+            else printf("No\n");
+        }
+    }
+}
