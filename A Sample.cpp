@@ -7,6 +7,14 @@ using namespace std;
 #define INF 99999999
 #define pb push_back
 
+ 
+//sort with respect to the second element in a pair !!
+//bool comp(const pair<int, int>&i, const pair<int, int>&j) {
+//        return i.second < j.second;
+//}    
+//vector< pair<int, int> >v;
+//sort(v.begin(), v.end(), comp);
+
 typedef long long ll;
 typedef unsigned long long ull;
 typedef vector<int> vi;
