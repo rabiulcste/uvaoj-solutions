@@ -1,44 +1,50 @@
 #include <bits//stdc++.h>
+
 using namespace std;
-
-string add(string a, string b)
-{
-    int i, j, carry, t1, t2, temp;
-    string ans;
-    int len1 = a.length();
-    int len2 = b.length();
-
-    carry = 0;
-
-    for(i = len1 - 1, j = len2-1; i >= 0 || j >= 0; i--, j--)
-    {
-        t1 = t2 = 0;
-        if(i >= 0) t1 = a[i] - '0';
-        if(j >= 0) t2 = b[j] - '0';
-
-        temp = ((t1 + t2 + carry)%10) + '0';
-        carry = (t1 + t2 + carry) / 10;
-        ans.insert(ans.begin(), temp);
-    }
-
-    if (carry) ans.insert(ans.begin(), carry + '0');
-
-    return ans;
-}
-
+char fibo[5000][1200];
 int main()
 {
-    int i, n;
-    string fibo[5001];
-    fibo[0] = "0";
-    fibo[1] = "1";
-    for(i=2; i<=5000; i++){
-        fibo[i] = add(fibo[i-1], fibo[i-2]);
-        //printf("%s", res[i].c_str());
-    }
-    while(scanf("%d", &n) == 1) {
-        printf("The Fibonacci number for %d is %s\n", n, fibo[n].c_str());
+    int i, j, n, m, carry, k, t1, t2;
+
+    fibo[0][0] = '0';
+    fibo[1][0] = '1';
+    int len1 = strlen(fibo[0]); //cout<<len1<<endl;
+    int len2 = strlen(fibo[1]); //cout<<len2<<endl;
+
+    for(i=2; i<=5001; i++){
+        char res[1010];
+        carry = m = 0;
+        for(j = len1-1, k = len2-1; j >= 0 || k >= 0; j--, k--)
+        {
+            t1 = t2 = 0;
+            if(j >= 0) t1 = fibo[i-2][j] - '0';
+            if(k >= 0) t2 = fibo[i-1][k] - '0';
+            res[m++] = ((t1 + t2 + carry)%10) + '0';
+            carry = (t1 + t2 + carry) / 10;
+
+        }
+        while(carry != 0) {
+            res[m++] = (carry % 10) + '0';
+            carry /= 10;
+        }
+        res[m] = '\0';
+        int y = 0;
+        for(int x=m-1; x>=0; x--, y++) {
+
+                fibo[i][y]=res[x];
+
+        }
+        //cout<<fibo[i]<<endl<<endl;
+        len1 = strlen(fibo[i-1]);
+        len2 = strlen(fibo[i]);
     }
 
+    while(cin>>n)
+    {
+        cout<<"The Fibonacci number for "<<n<<" is "<<fibo[n]<<"\n";
+    }
     return 0;
 }
+
+
+
