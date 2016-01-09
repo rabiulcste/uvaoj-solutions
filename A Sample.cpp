@@ -21,7 +21,7 @@ using namespace std;
 #define FORD(i,a,b) for(int i=(a);i>=(b);i--)
 
 inline bool EQ(double a, double b) { return fabs(a-b) < 1e-9; }
-
+inline int gcd(int a, int b) { if (b == 0) return a; return gcd(b, a % b);}
 //Convert int to string
 template <typename T>
 string to_str(T str)
@@ -83,7 +83,6 @@ typedef long int i32;
 typedef unsigned long int ui32;
 typedef long long int i64;
 typedef unsigned long long int  ui64;
-
 
 int main()
 {
