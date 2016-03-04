@@ -14,8 +14,8 @@ using namespace std;
 #define sqr(x) ((x)*(x))
 #define SET(x) memset(x, 0, sizeof(x))
 #define CLR(x) memset(x, -1, sizeof(x))
-#define xx first
-#define yy second
+#define F first
+#define S second
 #define REP(i,n) for(int i=0;i<(n);i++)
 #define FOR(i,a,b) for(int i=(a);i<=(b);i++)
 #define FORD(i,a,b) for(int i=(a);i>=(b);i--)
@@ -89,4 +89,3 @@ int main()
     ios_base::sync_with_stdio(0);
     return 0;
 }
-
