@@ -19,7 +19,8 @@ using namespace std;
 #define REP(i,n) for(int i=0;i<(n);i++)
 #define FOR(i,a,b) for(int i=(a);i<=(b);i++)
 #define FORD(i,a,b) for(int i=(a);i>=(b);i--)
-
+#define sf scanf
+#define pf printf 
 inline bool EQ(double a, double b) { return fabs(a-b) < 1e-9; }
 inline int gcd(int a, int b) { if (b == 0) return a; return gcd(b, a % b);}
 //Convert int to string
