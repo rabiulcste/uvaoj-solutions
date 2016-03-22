@@ -85,6 +85,8 @@ typedef unsigned long int ui32;
 typedef long long int i64;
 typedef unsigned long long int  ui64;
 
+const int T2=105; const int T3=1005; const int T4=10005; const int T5=100005;
+
 int main()
 {
     ios_base::sync_with_stdio(0);
