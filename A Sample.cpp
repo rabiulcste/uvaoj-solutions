@@ -2,8 +2,8 @@
 
 using namespace std;
 
-#define MP make_pair
-#define PB push_back
+#define mp make_pair
+#define pb push_back
 #define INF (int)1e9
 #define EPS 1e-9
 #define PI 3.1415926535897932384626433832795
@@ -19,8 +19,11 @@ using namespace std;
 #define REP(i,n) for(int i=0;i<(n);i++)
 #define FOR(i,a,b) for(int i=(a);i<=(b);i++)
 #define FORD(i,a,b) for(int i=(a);i>=(b);i--)
-#define sf scanf
+#define in scanf
 #define pf printf 
+#define sf(n)       scanf("%d", &n)
+#define sff(a,b)    scanf("%d %d", &a, &b)
+#define sfff(a,b,c) scanf("%d %d %d", &a, &b, &c)
 inline bool EQ(double a, double b) { return fabs(a-b) < 1e-9; }
 inline int gcd(int a, int b) { if (b == 0) return a; return gcd(b, a % b);}
 //Convert int to string
