@@ -26,6 +26,11 @@ using namespace std;
 #define sfff(a,b,c) scanf("%d %d %d", &a, &b, &c)
 inline bool EQ(double a, double b) { return fabs(a-b) < 1e-9; }
 inline int gcd(int a, int b) { if (b == 0) return a; return gcd(b, a % b);}
+//Debug
+#define DDD(x,y,z) cerr<<__FUNCTION__<<":"<<__LINE__<<": "#x" = "<<x<<" | "#y" = "<<y<<" | "#z" ="<<z<<endl;
+#define DD(x,y) cerr<<__FUNCTION__<<":"<<__LINE__<<": "#x" = "<<x<<" | "#y" = "<<y<<endl;
+#define D(x) cerr<<__FUNCTION__<<":"<<__LINE__<<": "#x" = "<<x<<endl;
+
 //Convert int to string
 template <typename T>
 string to_str(T str)
