@@ -8,6 +8,7 @@ int min(int num1, int num2)
         return num2;
     return num1;
 }
+
 int main()
 {
     int ugly[10000];
