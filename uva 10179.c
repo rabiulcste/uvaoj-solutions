@@ -38,7 +38,7 @@ int main()
 {
     int n;
     while(scanf("%d", &n) && n!=0){
-    printf("%d\n", totient(n));
+    	printf("%d\n", totient(n));
     }
     return 0;
 }
