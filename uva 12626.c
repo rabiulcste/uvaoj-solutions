@@ -5,6 +5,7 @@ int main()
 {
     int cases, len, j, m, a, r, i, t, g, count;
     char s[601];
+    
     while(scanf("%d", &cases) == 1){
         while(cases--){
                 count= m = a = r = i = t = g = 0;
@@ -39,4 +40,3 @@ int main()
     }
     return 0;
 }
-
