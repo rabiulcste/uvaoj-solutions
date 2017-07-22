@@ -7,5 +7,6 @@ int main()
             sum=n+(n-1)/(k-1);
         printf("%lld\n", sum);
     }
+    
     return 0;
 }
