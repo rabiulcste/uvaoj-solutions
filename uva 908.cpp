@@ -51,46 +51,48 @@ int krushkal(int n)
     }
     return sum;
 }
+
 int main()
 {
     int n, k, m;
     bool flag=true;
     // the number of nodes and edges
     while(scanf("%d", &n)==1){
-    int initcost = 0;
-    e.clear();
-    for(int i = 0; i < n-1; i++)
-    {
-        int u, v, w;
-        cin>>u>>v>>w;
-        initcost += w;
+        int initcost = 0;
+        e.clear();
+        for(int i = 0; i < n-1; i++)
+        {
+            int u, v, w;
+            cin>>u>>v>>w;
+            initcost += w;
+        }
+        cin>>k;
+        for(int i = 0; i < k; i++) {
+            int u, v, w;
+            cin>>u>>v>>w;
+            Edge data;
+            data.u = u;
+            data.v = v;
+            data.w = w;
+            e.push_back(data);
+        }
+        cin>>m;
+        for(int i = 0; i < m; i++) {
+            int u, v, w;
+            cin>>u>>v>>w;
+            Edge data;
+            data.u = u;
+            data.v = v;
+            data.w = w;
+            e.push_back(data);
+        }
+        n = k + m;
+        int res = krushkal(n);
+        if(!flag) printf("\n");
+        flag = false;
+        cout<<initcost<<endl;
+        cout<<res<<endl;
     }
-    cin>>k;
-    for(int i = 0; i < k; i++) {
-        int u, v, w;
-        cin>>u>>v>>w;
-        Edge data;
-        data.u = u;
-        data.v = v;
-        data.w = w;
-        e.push_back(data);
-    }
-    cin>>m;
-    for(int i = 0; i < m; i++) {
-        int u, v, w;
-        cin>>u>>v>>w;
-        Edge data;
-        data.u = u;
-        data.v = v;
-        data.w = w;
-        e.push_back(data);
-    }
-    n = k + m;
-    int res = krushkal(n);
-    if(!flag) printf("\n");
-    flag = false;
-    cout<<initcost<<endl;
-    cout<<res<<endl;
-    }
+    
     return 0;
 }
