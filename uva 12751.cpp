@@ -1,5 +1,4 @@
 #include <bits//stdc++.h>
-
 using namespace std;
 
 int main()
@@ -18,4 +17,5 @@ int main()
         }
         printf("Case %d: %d\n", ++kase, cal-ans);
     }
+    return 0;
 }
