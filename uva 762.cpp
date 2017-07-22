@@ -1,7 +1,5 @@
 #include <bits//stdc++.h>
-
 using namespace std;
-
 
 map<string, string> parent;
 map<string, int> visited;
@@ -33,6 +31,7 @@ void printpath(string a, string b) {
     printpath(parent[a], b);
     cout<<parent[a]<<" "<<a<<endl;
 }
+
 int main()
 {
     int n;
@@ -62,6 +61,6 @@ int main()
         else
             printpath(end, start);
     }
+    
     return 0;
 }
-
