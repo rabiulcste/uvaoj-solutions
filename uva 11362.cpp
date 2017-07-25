@@ -36,4 +36,5 @@ int main()
         if(flag) printf("YES\n");
         else printf("NO\n");
     }
+    return 0;
 }
