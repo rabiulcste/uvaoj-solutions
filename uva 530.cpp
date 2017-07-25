@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 int main()
 {
     int n, r;
@@ -20,5 +19,6 @@ int main()
         }
         printf("%lld\n", ans);
     }
+    
     return 0;
 }
