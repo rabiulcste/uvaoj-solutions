@@ -30,7 +30,7 @@ int main()
 {
     int n, m;
     // the number of nodes and edges
-    while(scanf("%d %d", &n, &m)==2){
+    while(scanf("%d %d", &n, &m)==2) {
             if(n==0 && m==0) break;
     string str, s1, s2;
     map<string, int>mp;
@@ -51,6 +51,7 @@ int main()
         data.w = w;
         e.push_back(data);
     }
+        
     cin>>str;
 
     for(int i = 1; i <= n; i++) pr[i] = i;
@@ -58,7 +59,7 @@ int main()
     sort(e.begin(), e.end());
 
     int cot = n-1, sum = 0;
-    for(int i = 0; i < (int)e.size(); i++){
+    for(int i = 0; i < (int)e.size(); i++) {
         int u = findset(e[i].u);
         int v = findset(e[i].v);
         if(u!=v)
@@ -69,9 +70,10 @@ int main()
             sum += e[i].w;
         }
     }
-    if(cot) cout<<"Impossible"<<endl;
-    else cout<<sum<<endl;
+    
+    if(cot) cout << "Impossible" << endl;
+    else cout << sum << endl;
     }
+    
     return 0;
 }
-
