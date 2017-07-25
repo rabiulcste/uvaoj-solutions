@@ -18,12 +18,9 @@ void bfs(int sx, int sy)
     memset(dist, 0, sizeof(dist));
 
     int ux, uy, vx, vy, flag = 0;
-
     queue<int>Q;
-
     Q.push(sx);
     Q.push(sy);
-
     color[sx][sy] = 1;
     dist[sx][sy] = 0;
 
@@ -67,6 +64,7 @@ int main()
     while(scanf("%d %d", &row, &col) && row && col){
         scanf("%d", &num);
         memset(mat, 0, sizeof(mat));
+        
         for(int i = 0; i < num; i++){
             scanf("%d %d", &r, &n);
             for(int j = 1; j <= n; j++){
@@ -74,6 +72,7 @@ int main()
                     mat[r][c] = 1;
             }
         }
+        
         scanf("%d %d", &sr, &sc);
         scanf("%d %d", &dr, &dc);
 
