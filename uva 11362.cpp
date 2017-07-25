@@ -19,6 +19,7 @@ int main()
     int kases, n;
     string s[10010];
     scanf("%d", &kases);
+    
     while(kases--){
         scanf("%d", &n);
         for(int i = 0; i < n; i++) cin>>s[i];
@@ -36,5 +37,6 @@ int main()
         if(flag) printf("YES\n");
         else printf("NO\n");
     }
+    
     return 0;
 }
